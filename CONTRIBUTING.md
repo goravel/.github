@@ -34,10 +34,6 @@ Scan through our existing issues to find one that interests you. You can narrow 
 
 Click **Make a contribution** at the bottom of any projects to make small changes such as a typo, sentence fix, or a broken link. This takes you to the file where you can make your changes and [create a pull request](#pull-request) for a review.
 
-#### Make changes in a codespace
-
-For more information about using a codespace for working on GitHub documentation, see "[Working in a codespace](https://github.com/github/docs/blob/main/contributing/codespace.md)."
-
 #### Make changes locally
 
 1. Fork the repository.
