@@ -53,6 +53,12 @@ body:
     id: describe
     attributes:
       label: Describe The Problem (描述问题)
+      value: |
+          1. In this environment...
+          2. With this config...
+          3. Run '...'
+          4. See error...
+      render: markdown
     validations:
       required: true
   - type: textarea
@@ -60,9 +66,9 @@ body:
     attributes:
       label: Reproduction Code (复现代码或截图)
       value: |
-          1. In this environment...
-          2. With this config...
-          3. Run '...'
-          4. See error...
+          ```go
+          // Your code here
+          ```
+      render: markdown
     validations:
       required: true
