@@ -20,6 +20,35 @@ body:
           required: false
         - label: The problem is generated after upgrading (问题是在升级之后产生的)
           required: false
+  - type: dropdown
+    id: system
+    attributes:
+      label: Operating System (操作系统)
+      options:
+        - Linux
+        - MacOS
+        - Windows
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: goversion
+    attributes:
+      label: Golang Version (Go 版本)
+      options:
+        - 1.18.x
+        - 1.19.x
+        - 1.20.x
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Goravel Version (Goravel 版本)
+      placeholder: 1.12.0
+    validations:
+      required: true
   - type: textarea
     id: describe
     attributes:
@@ -30,15 +59,10 @@ body:
     id: reproduce
     attributes:
       label: Reproduction Code (复现代码或截图)
-    validations:
-      required: true
-  - type: textarea
-    id: others
-    attributes:
-      label: Environment (运行环境)
       value: |
-        System: Linux/MacOS/Windows
-        Golang: 1.19/1.20/1.xx.x
-        Goravel: 1.11.0/1.11.1/1.xx.x
+          1. In this environment...
+          2. With this config...
+          3. Run '...'
+          4. See error...
     validations:
       required: true
