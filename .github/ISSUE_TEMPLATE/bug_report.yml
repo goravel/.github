@@ -37,8 +37,8 @@ body:
     attributes:
       label: Environment (运行环境)
       value: |
-        System: Linux/Mac/Windows
-        Golang Version: 1.18/1.19/1.20
-        Goravel Version: 1.11.0/1.11.1/1.12.0
+        - System: Linux / MacOS / Windows
+        - Golang Version: 1.18 / 1.19 / 1.20
+        - Goravel Version: 1.11.0 / 1.11.1 / 1.12.0
     validations:
       required: true
