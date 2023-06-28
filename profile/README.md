@@ -1,4 +1,16 @@
-<p align="center"><a href="https://www.goravel.dev" target="_blank"><img src="https://www.goravel.dev/logo.png" width="400"></a></p>
+<div align="center">
+
+<a href="https://www.goravel.dev" target="_blank"><img src="https://www.goravel.dev/logo.png" width="400"></a>
+
+[![Doc](https://pkg.go.dev/badge/github.com/goravel/framework)](https://pkg.go.dev/github.com/goravel/framework)
+[![Go](https://img.shields.io/github/go-mod/go-version/goravel/framework)](https://golang.org/)
+[![Release](https://img.shields.io/github/release/goravel/framework.svg)](https://github.com/goravel/framework/releases)
+[![Test](https://github.com/goravel/framework/actions/workflows/test.yml/badge.svg)](https://github.com/goravel/framework/actions)
+[![Report Card](https://goreportcard.com/badge/github.com/goravel/framework)](https://goreportcard.com/report/github.com/goravel/framework)
+[![Codecov](https://codecov.io/gh/goravel/framework/branch/master/graph/badge.svg)](https://codecov.io/gh/goravel/framework)
+![License](https://img.shields.io/github/license/goravel/framework)
+
+</div>
 
 ## About Goravel
 
