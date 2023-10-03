@@ -36,17 +36,17 @@ body:
     attributes:
       label: Golang Version (Go 版本)
       options:
-        - 1.18.x
-        - 1.19.x
+        - 1.21.x
         - 1.20.x
-        - Other
+        - 1.19.x
+        - 1.18.x
     validations:
       required: true
   - type: input
     id: version
     attributes:
       label: Goravel Version (Goravel 版本)
-      placeholder: 1.12.0
+      placeholder: 1.13.1
     validations:
       required: true
   - type: textarea
@@ -69,4 +69,4 @@ body:
           // Your code here
           ```
     validations:
-      required: true
+      required: false
