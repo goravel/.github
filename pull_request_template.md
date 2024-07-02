@@ -1,9 +1,13 @@
 ## 📑 Description
 
-<!-- Add a brief description of the pr -->
-<!-- Please add the Review Ready tag when the PR is good to go -->
-
 Closes https://github.com/goravel/goravel/issues/?
+
+<!-- Please add Review Ready tag when the PR is good to go -->
+<!-- More description can be written after this -->
+
+<!-- Do not remove this line -->
+@coderabbitai summary
+<!-- Trigger AI description by commenting @coderabbitai summary -->
 
 ## ✅ Checks
 
