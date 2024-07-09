@@ -8,16 +8,18 @@ jobs:
   codecov:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-go@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
         with:
           go-version: 'stable'
       - name: Install dependencies
         run: go mod tidy
       - name: Run tests with coverage
-        run: go test -v -coverprofile="coverage.out" ./...
+        run: go test -timeout 1h -coverprofile="coverage.out" ./...
+      - name: Print coverage report
+        run: go tool cover -func=coverage.out
       - name: Upload coverage report to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           file: ./coverage.out
           token: ${{ secrets.CODECOV }}
