@@ -1,9 +1,6 @@
 name: Codecov
 on:
-  push:
-    branches:
-      - master
-  pull_request:
+  workflow_call:
 jobs:
   codecov:
     runs-on: ubuntu-latest
