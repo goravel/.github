@@ -21,6 +21,7 @@ jobs:
       - name: Get master branch SHA
         id: get-master-branch-sha
         run: |
+          git fetch origin master
           SHA="$(git rev-parse origin/master)"
           echo "sha=$SHA" >> $GITHUB_OUTPUT
       - name: Get Benchmark Results from master branch
