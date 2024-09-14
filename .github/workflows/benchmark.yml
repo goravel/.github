@@ -12,6 +12,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: "stable"
+          cache: true
       - name: Run Benchmark
         run: set -o pipefail; go test ./... -benchmem -run=^$ -bench . | tee output.txt
       # NOTE: Benchmarks could change with different CPU types

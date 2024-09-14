@@ -9,6 +9,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: 'stable'
+          cache: true
       - name: Install dependencies
         run: go mod tidy
       - name: Run tests with coverage
