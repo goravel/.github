@@ -10,17 +10,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with:
-          go-version: 'stable'
-          cache: false
-      - name: Go mod cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/go-build
-            ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go-
+          go-version: "stable"
+          cache: true
       - name: Install dependencies
         run: go mod tidy
       - name: Lint
@@ -36,18 +27,10 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: "stable"
-      - name: Go mod cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/go-build
-            ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go-
+          cache: true
       - name: Install dependencies
         run: go mod tidy
       - name: Install Nilaway
         run: go install go.uber.org/nilaway/cmd/nilaway@latest
       - name: Run Nilaway
-        run: nilaway ./...
+        run: nilaway -include-pkgs="github.com/goravel" ./...
