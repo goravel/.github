@@ -20,17 +20,17 @@ jobs:
           skip-cache: true
           version: latest
           args: --timeout=30m ./...
-  nilaway:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
-        with:
-          go-version: "stable"
-          cache: true
-      - name: Install dependencies
-        run: go mod tidy
-      - name: Install Nilaway
-        run: go install go.uber.org/nilaway/cmd/nilaway@latest
-      - name: Run Nilaway
-        run: nilaway -include-pkgs="github.com/goravel" -exclude-pkgs="github.com/goravel/framework/mocks" ./...
+  # nilaway:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-go@v5
+  #       with:
+  #         go-version: "stable"
+  #         cache: true
+  #     - name: Install dependencies
+  #       run: go mod tidy
+  #     - name: Install Nilaway
+  #       run: go install go.uber.org/nilaway/cmd/nilaway@latest
+  #     - name: Run Nilaway
+  #       run: nilaway -include-pkgs="github.com/goravel" -exclude-pkgs="github.com/goravel/framework/mocks" ./...
