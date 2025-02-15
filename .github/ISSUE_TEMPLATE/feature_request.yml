@@ -1,6 +1,7 @@
 name: ✨ Feature (功能请求)
 description: Suggest an new idea (提案一个新功能)
-labels: ["✏️ Feature", "enhancement"]
+labels: []
+type: "feature"
 
 body:
   - type: markdown
