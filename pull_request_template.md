@@ -1,13 +1,9 @@
 ## 📑 Description
 
-Closes https://github.com/goravel/goravel/issues/?
+Closes https://github.com/goravel/goravel/issues/
 
-<!-- Please add Review Ready tag when the PR is good to go -->
+<!-- Please add Review Ready tag or leave a Review Ready message when the PR is good to go -->
 <!-- More description can be written after this -->
-
-<!-- Do not remove this line -->
-@coderabbitai summary
-<!-- Trigger AI description by commenting @coderabbitai summary -->
 
 ## ✅ Checks
 
