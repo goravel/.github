@@ -19,7 +19,7 @@ jobs:
         with:
           skip-cache: true
           version: latest
-          args: --timeout=30m ./...
+          args: --timeout=10m ./...
   # nilaway:
   #   runs-on: ubuntu-latest
   #   steps:
