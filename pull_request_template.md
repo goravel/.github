@@ -5,6 +5,8 @@ Closes https://github.com/goravel/goravel/issues/
 <!-- Please add Review Ready tag or leave a Review Ready message when the PR is good to go -->
 <!-- More description can be written after this -->
 
+@coderabbitai summary
+
 ## ✅ Checks
 
 <!-- Make sure your PR passes the CI checks and do check the following fields as needed - -->
