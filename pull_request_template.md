@@ -3,7 +3,7 @@
 Closes https://github.com/goravel/goravel/issues/
 
 <!-- Please add Review Ready tag or leave a Review Ready message when the PR is good to go -->
-<!-- More description can be written after this -->
+<!-- Install the agent skills, then let AI generate the PR description: https://www.goravel.dev/prologue/contributions.html#agent-skills -->
 
 ## ✅ Checks
 
